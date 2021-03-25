@@ -1,0 +1,35 @@
+<%- include("partials/header"); -%>
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+
+
+<div class="contain">
+<h1>Compose</h1>
+<form class="" action="/goto" method="post" autocomplete="off" onsubmit="return validate()">
+<div class="form-group">
+  <label><h4><em>Title</em></h4></label>
+  <input type="text" name="postTitle" id="text1" class="form-control">
+  <label><h4><em>Post</em></h4></label>
+  <textarea class="form-control" name="postBody" id="text2" rows="8" cols="80"></textarea>
+</div>
+<button type="submit" class="btn btn-primary" name="button" >Publish</button>
+
+</form>
+</div>
+<script type="text/javascript">
+  function validate()
+  {
+    let title=document.getElementById("text1").value;
+    let body=document.getElementById("text2").value;
+    if(title == "" || body == "")
+    {
+      alert("Please enter the required fields!")
+      return false;
+    }
+    else {
+       return true;
+    }
+
+  }
+</script>
+
+<%- include("partials/footer"); -%>

@@ -1,0 +1,24 @@
+<%- include("partials/header"); -%>
+<div class="container">
+<h1>First Web Page</h1>
+<hr>
+<p class="fon"><%= startingContent%></p>
+<div class="comp">
+   <button class="dec" type="button" name="button" onclick="compose()">Compose</button>
+</div>
+<% posts.forEach(function(post){ if(post.title != "") {%>
+<div class="head"><h1><%= post.title %></h1> <button class="dec" type="button" name="button"><a class="anch" href="/del/<%=post.title%>">Delete</a></button></div>
+<hr><p class="fon"><%= post.content.substring(0,20)+"...."%>
+<a href="/posti/<%=post.title%>">Read More</a>
+</p>
+<br>
+<% }})%>
+
+</div>
+<%- include("partials/footer"); -%>
+<script type="text/javascript">
+  function compose()
+  {
+    window.location='/compose';
+  }
+</script>

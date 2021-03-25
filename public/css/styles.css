@@ -1,0 +1,134 @@
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.main
+{
+  margin-left: 500px;
+}
+.sub
+{
+  margin-left: 450px;
+}
+.pado{
+  margin-left: 350px;
+}
+.footer {
+   position: fixed;
+   height: 50px
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: MediumSeaGreen;
+   color: white;
+   text-align: center;
+}
+.foot
+{
+padding-top: 15px;
+}
+.container{
+  height: 400px;
+  margin-left: 100px;
+  overflow-y:auto;
+  overflow: auto;
+    position: relative;
+}
+.contain{
+  margin-left: 100px;
+  margin-right: 200px;
+
+}
+
+.comp{
+  position: absolute;
+  margin-left: 700px;
+  top:0;
+}
+
+#cc
+{
+  text-decoration: none;
+}
+.head{
+  position: relative;
+
+}
+.dec{
+  background-color: #1bdeaf; /* Green */
+  border: none;
+  color: white;
+  font-weight: bolder;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  position: absolute;
+  margin-left: 200px;
+  top: 0;
+}
+a.anch, a.anch:visited, a.anch:hover, a.anch:active {
+  color: inherit;
+  text-decoration: none;
+}
+.fon{
+  font-size: 20px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.container-part{
+  display: flex;
+  height: 60px;
+
+  align-items: center;
+}
+
+.title-msg{
+  text-align: center;
+  font-size: 30px;
+  flex:0.9;
+}
+
+.nav-bar{
+  flex:0.5;
+}
+
+.nav-inside{
+
+}
+
+.content{
+  margin-left: 15px;
+  font-size: 20px;
+
+}
+
+.content > a{
+    text-decoration: none;
+}
+
+.marg{
+  margin-left: 100px;
+  display: flex;
+}
